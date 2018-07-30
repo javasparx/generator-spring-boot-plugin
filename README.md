@@ -1,0 +1,1 @@
+"# generator-spring-boot-plugin" 

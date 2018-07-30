@@ -1,0 +1,26 @@
+{
+  "name": "generator-spring-boot-plugin",
+  "version": "0.1.0",
+  "description": "Javlon's Spring Boot plugin project generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/javasparx/generator-spring-boot-plugin.git"
+  },
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "author": "Javlon Eraliyev <javlon@devops.uz>",
+  "license": "MIT",
+  "dependencies": {
+    "global": "^4.3.2",
+    "yeoman-generator": "^3.1.1",
+    "yo": "^2.0.5"
+  },
+  "files": [
+    "app"
+  ]
+}
