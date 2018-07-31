@@ -1,5 +1,5 @@
-# generator-jhipster-entity-audit
-> Generator to generate boilerplate String Boot Plugin project
+# generator-spring-boot-plugin
+> Generator to generate boilerplate Spring Boot Plugin project
 
 ### Installation
 
