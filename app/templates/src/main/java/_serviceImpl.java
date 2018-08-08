@@ -5,6 +5,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 //import org.springframework.web.client.RestTemplate;
+//import org.springframework.beans.factory.annotation.Qualifier;
 import <%= basePackage %>.config.<%= appnameCapitalized %>Properties;
 import <%= basePackage %>.service.<%= appnameCapitalized %>Service;
 
@@ -13,17 +14,17 @@ public class <%= appnameCapitalized %>ServiceImpl implements <%= appnameCapitali
 
     private final Logger log = LoggerFactory.getLogger(<%= appnameCapitalized %>ServiceImpl.class);
     private final <%= appnameCapitalized %>Properties <%= appname %>Properties;
-//    private final RestTemplate restTemplate;
+//    private final RestTemplate <%= appname %>RestTemplate;
 
     @Autowired
-    public <%= appnameCapitalized %>ServiceImpl(<%= appnameCapitalized %>Properties <%= appname %>Properties/*, RestTemplate restTemplate*/) {
+    public <%= appnameCapitalized %>ServiceImpl(<%= appnameCapitalized %>Properties <%= appname %>Properties/*, @Qualifier("<%= appname %>RestTemplate") RestTemplate <%= appname %>RestTemplate*/) {
         this.<%= appname %>Properties = <%= appname %>Properties;
-//        this.restTemplate = restTemplate;
+//        this.<%= appname %>RestTemplate = <%= appname %>RestTemplate;
     }
 
     @Override
     public String send(String request) {
-        log.debug("Request : {}, originator : {}", request, <%= appname %>Properties.getOriginator());
+        log.debug("Request : {}, name : {}", request, <%= appname %>Properties.getName());
         return "Response for : " + request;
     }
 

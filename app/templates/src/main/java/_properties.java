@@ -8,5 +8,5 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 @Getter<% } %>
 @ConfigurationProperties(prefix = "<%= appname %>")
 public class <%= appnameCapitalized %>Properties {
-    private String originator = "abc123";
+    private String name = "<%= appname %>";
 }

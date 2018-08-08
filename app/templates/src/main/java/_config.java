@@ -10,12 +10,12 @@ import org.springframework.context.annotation.Configuration;
 @EnableConfigurationProperties(<%= appnameCapitalized %>Properties.class)
 public class <%= appnameCapitalized %>Configuration {
 
-//    @Bean("playRestTemplate")
-//    public RestTemplate playRestTemplate(RestTemplateBuilder restTemplateBuilder, PlaySmsProperties playSmsProperties) {
+//    @Bean("<%= appname %>RestTemplate")
+//    public RestTemplate <%= appname %>RestTemplate(RestTemplateBuilder restTemplateBuilder, <%= appnameCapitalized %>Properties <%= appname %>Properties) {
 //        return restTemplateBuilder
-//                .setReadTimeout(playSmsProperties.getReadTimeout())
-//                .setConnectTimeout(playSmsProperties.getConnectTimeout())
-//                .basicAuthorization(playSmsProperties.getLogin(), playSmsProperties.getPassword())
+//                .setReadTimeout(<%= appname %>Properties.getReadTimeout())
+//                .setConnectTimeout(<%= appname %>Properties.getConnectTimeout())
+//                .basicAuthorization(<%= appname %>Properties.getLogin(), <%= appname %>Properties.getPassword())
 //                .build();
 //    }
 

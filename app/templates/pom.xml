@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId><%= basePackage %></groupId>
-	<artifactId><%= appname %></artifactId>
+	<artifactId>spring-boot-<%= appname %>-plugin</artifactId>
 	<version>0.0.1</version>
 	<packaging>jar</packaging>
 
-	<name><%= appnameCapitalized %></name>
+	<name>Spring Boot <%= appnameCapitalized %> Plugin</name>
 	<description>Spring Boot Plugin for <%= appnameCapitalized %></description>
 
 	<parent>
