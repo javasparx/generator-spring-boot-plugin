@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId><%= basePackage %></groupId>
-	<artifactId>spring-boot-<%= appname %>-plugin</artifactId>
+	<artifactId>spring-boot-<%= appname %></artifactId>
 	<version>0.0.1</version>
 	<packaging>jar</packaging>
 

@@ -122,6 +122,24 @@ module.exports = class extends Generator {
         );
 
         this.fs.copyTpl(
+            this.templatePath('.gitignore'),
+            this.destinationPath('.gitignore'),
+            this.options
+        );
+
+        this.fs.copyTpl(
+            this.templatePath('.gitattributes'),
+            this.destinationPath('.gitattributes'),
+            this.options
+        );
+
+        this.fs.copyTpl(
+            this.templatePath('.editorconfig'),
+            this.destinationPath('.editorconfig'),
+            this.options
+        );
+
+        this.fs.copyTpl(
             this.templatePath('./src/main/resources/application.yaml'),
             this.destinationPath('./src/main/resources/application.yaml'),
             this.options
