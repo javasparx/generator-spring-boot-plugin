@@ -122,19 +122,19 @@ module.exports = class extends Generator {
         );
 
         this.fs.copyTpl(
-            this.templatePath('.gitignore'),
+            this.templatePath('_gitignore'),
             this.destinationPath('.gitignore'),
             this.options
         );
 
         this.fs.copyTpl(
-            this.templatePath('.gitattributes'),
+            this.templatePath('_gitattributes'),
             this.destinationPath('.gitattributes'),
             this.options
         );
 
         this.fs.copyTpl(
-            this.templatePath('.editorconfig'),
+            this.templatePath('_editorconfig'),
             this.destinationPath('.editorconfig'),
             this.options
         );
