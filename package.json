@@ -1,6 +1,6 @@
 {
   "name": "generator-spring-boot-plugin",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Javlon's Spring Boot plugin project generator",
   "main": "index.js",
   "scripts": {
