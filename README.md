@@ -18,13 +18,13 @@ yo spring-boot-plugin
 Enter plugin name with lower-case:
 
 ```bash
-? Give a name for plugin : **_app_**
+? Give a name for plugin : app
 ```
 
 Enter plugin package:
 
 ```bash
-? What package do you want to use : **_uz.company_**
+? What package do you want to use : uz.company
 ```
 
 Choose plugin dependencies:
