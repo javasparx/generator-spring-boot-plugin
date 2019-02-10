@@ -1,7 +1,7 @@
 {
   "name": "generator-spring-boot-plugin",
-  "version": "0.2.1",
-  "description": "Javlon's Spring Boot plugin project generator",
+  "version": "0.2.2",
+  "description": "Generates plugin project for Spring Boot with all common classes, properties and ready git settings.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,12 +13,13 @@
   "keywords": [
     "yeoman-generator"
   ],
-  "author": "Javlon Eraliyev <javlon@devops.uz>",
+  "author": "Javlon Eraliyev <javlon@devops.uz> (http://www.devops.uz)",
   "license": "MIT",
   "dependencies": {
     "global": "^4.3.2",
     "yeoman-generator": "^3.1.1",
-    "yo": "^2.0.5"
+    "yo": "^2.0.5",
+    "lodash": ">=4.17.11"
   },
   "files": [
     "app"
