@@ -1,5 +1,5 @@
 # generator-spring-boot-plugin
-> Generator to generate boilerplate Spring Boot Plugin project
+> Generates plugin project for Spring Boot with all common classes, properties and ready git settings.
 
 ### Installation
 
