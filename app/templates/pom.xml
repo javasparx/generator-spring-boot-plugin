@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId><%= basePackage %></groupId>
-	<artifactId>spring-boot-<%= appname %></artifactId>
+	<artifactId>spring-boot-<%= appnameKebab %></artifactId>
 	<version>0.0.1</version>
 	<packaging>jar</packaging>
 

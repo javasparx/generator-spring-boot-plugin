@@ -1,4 +1,5 @@
 var Generator = require('yeoman-generator');
+var _ = require('lodash');
 
 module.exports = class extends Generator {
 
@@ -93,9 +94,10 @@ module.exports = class extends Generator {
         ]).then((answers) => {
             // this.appname = answers.appname;
             // this.deps = answers.deps;
-            this.options.appname = answers.appname.toLowerCase();
+            this.options.appname = _.camelCase(_.lowerCase(answers.appname));
             this.options.deps = answers.deps;
             this.options.appnameCapitalized = answers.appname.charAt(0).toUpperCase() + answers.appname.slice(1);
+            this.options.appnameKebab = _.kebabCase(answers.appname);
             this.options.basePackage = answers.basePackage + '.' + this.options.appname;
             this.options.packagePath = this.options.basePackage.split('.').join('/');
             this.log('basePackage : ', this.options.basePackage);
