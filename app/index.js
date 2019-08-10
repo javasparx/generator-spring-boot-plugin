@@ -148,6 +148,12 @@ module.exports = class extends Generator {
         );
 
         this.fs.copyTpl(
+            this.templatePath('./src/main/resources/META-INF/spring.factories'),
+            this.destinationPath('./src/main/resources/META-INF/spring.factories'),
+            this.options
+        );
+
+        this.fs.copyTpl(
             this.templatePath('./src/main/java/_config.java'),
             this.destinationPath('./src/main/java/' + this.options.packagePath + '/config/' + this.options.appnameCapitalized + 'Configuration.java'),
             this.options
