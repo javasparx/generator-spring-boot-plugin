@@ -1,3 +1,4 @@
+# see for more details: https://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-developing-auto-configuration.html
 # Auto Configure
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
 <%= basePackage %>.config.<%= appnameCapitalized %>Configuration
