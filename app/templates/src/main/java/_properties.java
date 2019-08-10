@@ -6,7 +6,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 
 <%if (lombok) { %>@Setter
 @Getter<% } %>
-@ConfigurationProperties(prefix = "<%= appname %>")
+@ConfigurationProperties(prefix = "<%= appnameKebab %>")
 public class <%= appnameCapitalized %>Properties {
-    private String name = "<%= appname %>";
+    private String name = "<%= appnameKebab %>-sample2";
 }
