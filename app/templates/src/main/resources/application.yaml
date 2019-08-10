@@ -1,2 +1,2 @@
-<%= appname %>:
-  name: <%= appname %>
+<%= appnameKebab %>:
+  name: <%= appnameKebab %>-sample
