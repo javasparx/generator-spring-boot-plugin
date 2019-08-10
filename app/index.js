@@ -98,7 +98,7 @@ module.exports = class extends Generator {
             this.options.deps = answers.deps;
             this.options.appnameCapitalized = answers.appname.charAt(0).toUpperCase() + answers.appname.slice(1);
             this.options.appnameKebab = _.kebabCase(answers.appname);
-            this.options.basePackage = answers.basePackage + '.' + this.options.appname;
+            this.options.basePackage = answers.basePackage + '.' + _.lowerCase(answers.appname).split(" ").join(".");
             this.options.packagePath = this.options.basePackage.split('.').join('/');
             this.log('basePackage : ', this.options.basePackage);
             this.log('packagePath : ', this.options.packagePath);
