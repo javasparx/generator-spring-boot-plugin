@@ -190,7 +190,7 @@ module.exports = class extends Generator {
         this.spawnCommandSync('git', ['init']);
         // this.spawnCommandSync('git', ['remote', 'add', 'origin', this.repo]);
         this.spawnCommandSync('git', ['add', '--all']);
-        this.spawnCommandSync('git', ['commit', '-m', '"initial commit from generator"']);
+        this.spawnCommandSync('git', ['commit', '-m', '"Bismilahir Rohmanir Rohiym. Initial commit from generator"']);
         // this.spawnCommandSync('git', ['push', '-u', 'origin', 'master']);
     }
 
