@@ -15,11 +15,12 @@ Create a directory, go into start creating plugin project :
 yo spring-boot-plugin
 ```
 
-Enter plugin name with lower-case:
+Enter plugin name with camel-case:
 
 ```bash
 ? Give a name for plugin : app
 ```
+*Generates maven project with name : spring-boot-`app`*
 
 Enter plugin package:
 
