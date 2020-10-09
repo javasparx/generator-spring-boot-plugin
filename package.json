@@ -1,6 +1,6 @@
 {
   "name": "generator-spring-boot-plugin",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Generates plugin project for Spring Boot with all common classes, properties and ready git settings.",
   "main": "index.js",
   "scripts": {
@@ -17,14 +17,14 @@
   "license": "MIT",
   "dependencies": {
     "global": "^4.3.2",
-    "yeoman-generator": "^3.1.1",
-    "yo": "^2.0.5",
-    "lodash": ">=4.17.13",
-    "set-value": ">=2.0.1",
-    "mixin-deep": ">=1.3.2",
+    "kind-of": "^6.0.3",
+    "lodash": "^4.17.20",
     "mem": "^4.0.0",
     "minimist": "^1.2.2",
-    "kind-of": "^6.0.3"
+    "mixin-deep": ">=1.3.2",
+    "set-value": "^3.0.2",
+    "yeoman-generator": "^3.1.1",
+    "yo": "^3.1.1"
   },
   "files": [
     "app"
