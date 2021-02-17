@@ -16,23 +16,20 @@ import static <%= basePackage %>.service.<%= appnameCapitalized %>Service.NAME;
 @ConditionalOnProperty(
         prefix = "<%= appnameKebab %>",
         name = "simulate",
-        havingValue = "false"
+        havingValue = "true",
+        matchIfMissing = true
 )
-public class <%= appnameCapitalized %>ServiceImpl implements <%= appnameCapitalized %>Service {
+public class Dummy<%= appnameCapitalized %>ServiceImpl implements <%= appnameCapitalized %>Service {
 
     private final Logger log = LoggerFactory.getLogger(<%= appnameCapitalized %>ServiceImpl.class);
-    private final <%= appnameCapitalized %>Properties <%= appname %>Properties;
-//    private final RestTemplate <%= appname %>RestTemplate;
 
-    @Autowired
-    public <%= appnameCapitalized %>ServiceImpl(<%= appnameCapitalized %>Properties <%= appname %>Properties/*, @Qualifier("<%= appname %>RestTemplate") RestTemplate <%= appname %>RestTemplate*/) {
-        this.<%= appname %>Properties = <%= appname %>Properties;
-//        this.<%= appname %>RestTemplate = <%= appname %>RestTemplate;
+    public Dummy<%= appnameCapitalized %>ServiceImpl() {
+        log.debug("############### <%= appnameCapitalized %> simulation is ON ###############");
     }
 
     @Override
     public String send(String request) {
-        log.debug("Request : {}, name : {}", request, <%= appname %>Properties.getName());
+        log.debug("Dummy request : {}", request);
         return "Response for : " + request;
     }
 

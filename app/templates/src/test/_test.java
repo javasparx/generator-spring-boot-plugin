@@ -7,13 +7,13 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
-import <%= basePackage %>.config.<%= appnameCapitalized %>Configuration;
+import <%= basePackage %>.config.TestConfig;
 import <%= basePackage %>.service.<%= appnameCapitalized %>Service;
 
 import static org.junit.Assert.*;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = {<%= appnameCapitalized %>Configuration.class, <%= appnameCapitalized %>ServiceImpl.class})
+@SpringBootTest(classes = {TestConfig.class})
 public class <%= appnameCapitalized %>ServiceImplTest {
 
     @Autowired

@@ -16,14 +16,14 @@ module.exports = class extends Generator {
             {
                 type: 'input',
                 name: 'appname',
-                message: 'Give a name for plugin : ',
+                message: 'Give a name for plugin (result wil be like spring-boot-APP-NAME) : ',
                 default: this.appname, // Default to current folder name
                 store: true
             },
             {
                 type: 'input',
                 name: 'basePackage',
-                message: 'What package do you want to use : ',
+                message: 'What package do you want to use (result wil be like uz.devops.APPNAME): ',
                 default: 'uz.javlon.pbs',
                 store: true
             },
@@ -44,7 +44,7 @@ module.exports = class extends Generator {
                     '\t\t</dependency>\n'
                 }, {
                     name: 'Full-stack web development with Tomcat and Spring MVC',
-                    value: '\t\t<dependency>\n' +
+                    value: '<dependency>\n' +
                     '\t\t\t<groupId>org.springframework.boot</groupId>\n' +
                     '\t\t\t<artifactId>spring-boot-starter-web</artifactId>\n' +
                     '\t\t</dependency>\n'
@@ -66,7 +66,7 @@ module.exports = class extends Generator {
                     '\t\t<dependency>\n' +
                     '\t\t\t<groupId>org.projectlombok</groupId>\n' +
                     '\t\t\t<artifactId>lombok</artifactId>\n' +
-                    '\t\t\t<version>1.16.18</version>\n' +
+                    '\t\t\t<version>1.18.8</version>\n' +
                     '\t\t\t<scope>compile</scope>\n' +
                     '\t\t</dependency>\n'
                 }, {
@@ -177,10 +177,24 @@ module.exports = class extends Generator {
             this.options
         );
 
+        this.fs.copyTpl(
+            this.templatePath('./src/main/java/_dummyService.java'),
+            this.destinationPath('./src/main/java/' + this.options.packagePath + '/service/impl/Dummy' + this.options.appnameCapitalized + 'ServiceImpl.java'),
+            this.options
+        );
+
         if (this.options.testing) {
             this.fs.copyTpl(
                 this.templatePath('./src/test/_test.java'),
                 this.destinationPath('./src/test/java/' + this.options.packagePath + '/service/impl/' + this.options.appnameCapitalized + 'ServiceImplTest.java'),
+                this.options
+            );
+        }
+
+        if (this.options.testing) {
+            this.fs.copyTpl(
+                this.templatePath('./src/test/_test-config.java'),
+                this.destinationPath('./src/test/java/' + this.options.packagePath + '/config/TestConfig.java'),
                 this.options
             );
         }

@@ -1,2 +1,3 @@
 <%= appnameKebab %>:
   name: <%= appnameKebab %>-sample
+  simulate: true
