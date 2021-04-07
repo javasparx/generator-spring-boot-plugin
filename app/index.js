@@ -16,14 +16,14 @@ module.exports = class extends Generator {
             {
                 type: 'input',
                 name: 'appname',
-                message: 'Give a name for plugin (result wil be like spring-boot-APP-NAME) : ',
+                message: 'Give a name for plugin, e.g: AppName (result wil be spring-boot-app-name) : ',
                 default: this.appname, // Default to current folder name
                 store: true
             },
             {
                 type: 'input',
                 name: 'basePackage',
-                message: 'What package do you want to use (result wil be like uz.devops.APPNAME): ',
+                message: 'What package do you want to use, e.g: uz.devops (result wil be uz.devops.app.name): ',
                 default: 'uz.javlon.pbs',
                 store: true
             },
@@ -50,7 +50,7 @@ module.exports = class extends Generator {
                     '\t\t</dependency>\n'
                 }, {
                     name: 'Java Persistence API including spring-data-jpa, spring-orm and Hibernate',
-                    value: '\t\t<dependency>\n' +
+                    value: '<dependency>\n' +
                     '\t\t\t<groupId>org.springframework.boot</groupId>\n' +
                     '\t\t\t<artifactId>spring-boot-starter-data-jpa</artifactId>\n' +
                     '\t\t</dependency>\n'

@@ -1,6 +1,6 @@
 {
   "name": "generator-spring-boot-plugin",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "description": "Generates plugin project for Spring Boot with all common classes, properties and ready git settings.",
   "main": "index.js",
   "scripts": {
