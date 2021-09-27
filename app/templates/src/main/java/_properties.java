@@ -8,5 +8,9 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 @Getter<% } %>
 @ConfigurationProperties(prefix = "<%= appnameKebab %>")
 public class <%= appnameCapitalized %>Properties {
-    private String name = "<%= appnameKebab %>-sample2";
+<%if (useReactive) { %>
+    private String url = "http://www.your-url.com";
+//    private String username = "my-login";
+//    private String password = "change-me";
+<% } %>
 }
