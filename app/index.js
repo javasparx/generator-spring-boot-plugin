@@ -78,7 +78,7 @@ module.exports = class extends Generator {
                         '\t\t<dependency>\n' +
                         '\t\t\t<groupId>org.projectlombok</groupId>\n' +
                         '\t\t\t<artifactId>lombok</artifactId>\n' +
-                        '\t\t\t<version>1.18.20</version>\n' +
+                        '\t\t\t<version>1.18.24</version>\n' +
                         '\t\t\t<scope>compile</scope>\n' +
                         '\t\t</dependency>\n'
                 }, {

@@ -11,10 +11,34 @@
 	<name>Spring Boot <%= appnameCapitalized %> Plugin</name>
 	<description>Spring Boot Plugin for <%= appnameCapitalized %></description>
 
+	<organization>
+		<name>devops.uz</name>
+		<url>http://devops.uz</url>
+	</organization>
+
+	<developers>
+		<developer>
+			<id>javasparx</id>
+			<name>Javlon Eraliyev</name>
+			<email>javlon@devops.uz</email>
+			<url>https://github.com/javasparx</url>
+			<organization>devops.uz</organization>
+			<organizationUrl>http://www.devops.uz</organizationUrl>
+			<roles>
+				<role>architect</role>
+				<role>developer</role>
+			</roles>
+			<timezone>Asia/Tashkent</timezone>
+			<properties>
+				<picUrl>https://avatars.githubusercontent.com/u/3093410?v=4</picUrl>
+			</properties>
+		</developer>
+	</developers>
+
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.2.7.RELEASE</version>
+		<version>2.4.7</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 
@@ -32,10 +56,10 @@
 	<build>
 		<pluginManagement>
 			<plugins>
-				<plugin>
-					<groupId>org.springframework.boot</groupId>
-					<artifactId>spring-boot-maven-plugin</artifactId>
-				</plugin>
+				<!--			<plugin>-->
+				<!--				<groupId>org.springframework.boot</groupId>-->
+				<!--				<artifactId>spring-boot-maven-plugin</artifactId>-->
+				<!--			</plugin>-->
 			</plugins>
 		</pluginManagement>
 	</build>
